@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mi primer App</title>
+  <style>
+        .izquierda{
+            float: left;
+        }
+        .texto-centrado{
+            text-align: center;
+        }
+        .borde-imagen{
+            margin: 5px;
+            padding: 10px;
+            border: 10px solid;
+            border-color: olive;
+        }
+        .contenedor{
+            overflow: hidden;
+            width: 100%;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Primer App con HTML</h1>      
+    </header>
+    <nav>
+        <a href="index.html">Volver</a>
+        <a href="#ejercicio1">Ir a ejercicio 1</a>
+        <a href="#ejercicio2">Ir a ejercicio 2</a>
+        <a href="#ejercicio3">Ir a ejercicio 3</a>
+        <a href="#ejercicio4">Ir a ejercicio 4</a>
+        <a href="#ejercicio5">Ir a ejercicio 5</a>
+        <a href="#ejercicio6">Ir a ejercicio 6</a>
+        <a href="#ejercicio7">Ir a ejercicio 7</a>
+    </nav>
+    <Section>
+        <article>
+            <a id="ejercicio1"></a>
+            <h2>Ejercicio 1 - Cinco lenguajes de programación en una línea separados por un gión</h2>
+            <p>C - C++ - Java - PHP - JavaScript</p>
+        </article>
+
+        <article>
+            <a id="ejercicio2"></a>
+            <h2>Ejercicio 2 - Cinco lenguajes de programación en columna</h2>
+            <p>
+                C<br>C++<br>Java<br>PHP<br>JavaScript
+            </p>
+        </article>
+
+        <article>
+            <a id="ejercicio3"></a>
+            <h2>Ejercicio 3 - Confeccionar una página que muestre dos párrafos</h2>
+            <strong>(En el primero agregar los saltos de línea correspondientes)</strong>
+            <p>SQL, Structure Query Language (Lenguaje de Consulta Estructurado) es un lenguaje de
+                programacion para trabajar con base de datos relacionales como MySQL, Oracle, etc. MySQL
+                es un interpretador de SQL, es un servidor de base de datos.<br>
+                MySQL permite crear base de datos y tablas, insertar datos, modificarlos, eliminarlos,
+                ordenarlos, hacer consultas y realizar muchas operaciones, etc., resumiendo: administrar
+                bases de datos.</p>
+            <p>Este tutorial tiene por objetivo acercar los conceptos iniciales para introducirse en el mundo
+                de las bases de datos.</p>
+        </article>
+
+        <article>
+            <a id="ejercicio4"></a>
+            <h2>Ejercicio 4 - Títuos y Párafos</h2>
+            <h2>Tipos de datos en MySQL</h2>
+            <h3>varchar</h3>
+            <p>Se usa para almacenar cadenas de caracteres. Una cadena es una secuencia de caracteres. Se coloca entre comillas (simples): 'Hola'<br>
+            El tipo "varchar" define una cadena de longitud variable en la cual determinamos el máximo de caracteres. Puede gurdar hasta 255  caracteres. 
+            Para almacenar cadenas de hasta 30 caracteres, definimos un campo de tipo varchar(30).</p>
+            <h3>int</h3>
+            <p>Se usa para guardar valores numéricos enteros, de -200000000 a 200000000 aproximadamente.<br>
+            Definimos campos de este tipo cuando queremos representar, por ejemplo, cantidades.</p>
+        </article>
+
+        <article>
+            <a id="ejercicio5"></a>
+            <h2>Ejercicio 5 - Imágenes con hipervínculos</h2>
+            <div class="contenedor">
+                <div class="izquierda">
+                    <p class="texto-centrado">Ir a Google</p>
+                    <a href="http://www.google.com.ar" target="_blank"><img class="borde-imagen" src="img/logo-google.gif" width="300px" alt="Google Argentina"></a>
+                </div>
+                <div class="izquierda">
+                    <p class="texto-centrado">Ir a Argentina Programa</p>
+                    <a href="http://argentinaprograma.inti.gob.ar" target="_blank"><img class="borde-imagen" src="img/logo-ap.png" width="300px" alt="Argentina Programa"></a>
+                </div>
+            </div>
+        </article><br><br><br><br>
+
+        <article>
+            <a id="ejercicio6"></a>
+            <h2>Ejercicio 6 - Lista no ordenada de 4 lenguajes de programación</h2>
+            <p>
+                <ul>
+                    <li>C</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <a id="ejercicio7"></a>
+            <h2>Ejercicio 7 - Lista anidadas</h2>
+            <p>
+                <ol>
+                    <li><a href="http://www.argentina.gob.ar">Argentina</a></li>
+                        <ul>
+                            <li><a href="http://www.clarin.com.ar">Clarín</a></li>
+                            <li><a href="http://www.cronica.com.ar">Crónica</a></li>
+                            <li><a href="http://www.lanacion.com.ar">La Nación</a></li>
+                            <li><a href="http://www.losandes.com.ar">Los Andes</a></li>
+                        </ul>
+                    <li><a href="https://www.gub.uy/">Uruguay</a></li>
+                        <ul>
+                            <li><a href="http://elpais.com.uy"></a>El País</li>
+                            <li><a href="http://ladiaria.com.uy">La Diaria</a></li>
+                            <li><a href="http://elobservador.com.uy">El Observador</a></li>
+                            <li><a href="http://www.lr21.com.uy">La Red 21</a></li>
+                        </ul>
+                    <li><a href="http://www.gov.br">Brasil</a></li>
+                        <ul>
+                            <li><a href="http://oglobo.com.br/">O Globo</a></li>
+                            <li><a href="http://jb.com.br/">Jornal do Brasil</a></li>
+                            <li><a href="http://folha.uol.com.br/">Folha</a></li>
+                            <li><a href="http://extra.globo.com/">Extra</a></li>
+                        </ul>
+                    <li><a href="https://www.paraguay.gov.py/">Paraguay</a></li>
+                        <ul>
+                            <li><a href="https://www.abc.com.py/">ABC</a></li>
+                            <li><a href="https://www.lanacion.com.py/">La Nación</a></li>
+                            <li><a href="https://www.hoy.com.py/">Hoy</a></li>
+                        </ul>
+                </ol>
+            </p>
+        </article>
+    </section>
+</body>
