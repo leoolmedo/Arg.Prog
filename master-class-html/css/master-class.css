@@ -1,0 +1,19 @@
+h1{
+  color:red;
+}
+#titulo1{
+  color:blue;
+}
+#titulo2{
+  color:green;
+}
+.texto{
+  color:red;
+  font-size:150%;
+}
+.horizontal{
+  float:left;
+  border:solid 3px blue;
+  margin: 20px;
+  padding: 10px;
+}
