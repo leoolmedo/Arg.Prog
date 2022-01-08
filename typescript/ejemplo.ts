@@ -6,9 +6,10 @@ class persona{
     private apellido:string;
     private anoNac:number;
   
-    constructor(nombre:string, apellido:string){
+    constructor(nombre:string, apellido:string, anoNac:number){
       this.nombre = nombre;
       this.apellido = apellido;
+      this.anoNac = anoNac;
     }
   
     // retorna el nombre completo
@@ -48,7 +49,7 @@ class persona{
     }
 }
 
-let mariana = new persona("Mariana", "Olmedo");
+let mariana = new persona("Mariana", "Olmedo", 1974);
 console.log(mariana.completo());
 
 mariana.Nombre = "Mariana Beatriz";
