@@ -16,40 +16,93 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
+<body background="./img/ds3-press.jpg" title="Deep Space Antenna 3 at the Malargüe station">
     <div class="conteiner">
         <div class="card mat-card" id="first-card">
-            <div id="profile-background"> <img src="./img/realistic-galaxy-background_624x200.png"></div>
+            <div id="profile-background"> 
+                <img src="./img/potw2034a_thin-head.jpg" title="Small section of the Cygnus supernova blast wave" >
+            </div>
             <div class="card-info">
-                <div id="info-img">
-                    <img class="profile-image" src="./img/perfil4.png">
-                </div>
-
-                <div class="info-data">
-                    
-                    <div class="padding-extra">
-                        <div class="btn-edit">
-                            <a href="#" class="btn-right"> <i class="fa fa-pen"></i></a>
+                <div class="row">
+                    <div class="col-1" style="display: flex; flex-direction: column ;" >
+                        <div>
+                            <a target="_blank" href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa">
+                                <img src="./img/logo-ap.png" alt="Argentina Programa, #Yo programo" width="100 px" class="float-start">
+                            </a>
                         </div>
-                        <h1>Leonardo J. Olmedo</h1>
-                        <div id="info-company">M&O tecnician en Telespazio Argentina</div>
-                        <div id="info-contact">
-                            <span>Malargüe, Argentina</span>
-                            <span><a href="#">Información de contacto</a></span>
+                        <h5>Argentina Programa</h5>
+                    </div>
+                    
+                    <div class="col-1" id="info-img">
+                        <img class="profile-image" src="./img/perfil4.png">
+                    </div>
+
+                    <div class="col info-data">
+                        
+                        <div class="padding-extra">
+                            <div class="btn-edit">
+                                <a href="#" class="btn-right"> <i class="fa fa-pen"></i></a>
+                            </div>
+                            <h1>Leonardo J. Olmedo</h1>
+                            <div id="info-company">M&O tecnician en Telespazio Argentina</div>
+                            <div id="info-contact">
+                                <span>Malargüe, Argentina</span>
+                                <span><a href="#">Información de contacto</a></span>
+                            </div>
+                        </div>
+                        <div>
+                        <ul id="info-details"> 
+                            <li><a target="_blank" href="https://www.telespazio.com/es/argentina">
+                                <!--<img src="https://www.telespazio.com/documents/559023/5746233/Logo_Telespazio_400_px_colore_sfondotrasparente_eng%20copia.png/91d73e51-d7d0-c13c-6c89-85d4a7571b94?t=1550224079848"> !-->
+                                <img src="./img/logo-tpz.png">
+                                <h2>Telespazio Argentina</h2>
+                            </a></li>
+                            <li><a target="_blank" href="#">
+                                <img src="./img/syl_systems_escudo_fondo_transparente.png">
+                                <h2>SyL Systems</h2>
+                            </a></li>
+                        </ul>
                         </div>
                     </div>
-                    <div>
-                    <ul id="info-details"> 
-                        <li><a href="https://www.telespazio.com/es/argentina">
-                            <!--<img src="https://www.telespazio.com/documents/559023/5746233/Logo_Telespazio_400_px_colore_sfondotrasparente_eng%20copia.png/91d73e51-d7d0-c13c-6c89-85d4a7571b94?t=1550224079848"> !-->
-                            <img src="./img/logo-tpz.png">
-                            <h2>Telespazio Argentina</h2>
-                        </a></li>
-                        <li><a href="#">
-                            <img src="./img/syl_systems_escudo_fondo_transparente.png">
-                            <h2>SyL Systems</h2>
-                        </a></li>
-                    </ul>
+                    <div class="text-end">
+                        <a href="https://www.facebook.com/leoolmedo3677" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+
+                        <a href="https://www.github.com" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+
+                        <a href="skype:leoolmedo?call" target="_blank" title="skype call">
+                            <i class="fab fa-skype"></i>
+                        </a>
+
+                        <a href="https://twitter.com/leojaviolmedo" target="_blank" title="Twitter profile">
+                            <i class="fab fa-twitter"></i> 
+                        </a>
+
+                        <a href="https://wa.me/5492604312515" target="_blank" title="Whatsapp text">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="" target="_blank" title="Phone call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+
+                        <a href="" target="_blank" title="Web Page">
+                            <i class="far fa-newspaper"></i>
+                        </a>
+
+                        
+
                     </div>
                 </div>
             
@@ -71,8 +124,8 @@
                     role="tab" aria-controls="works" aria-selected="false"><i class="fas fa-building"> Work</i></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="other-tab" data-bs-toggle="tab" data-bs-target="#other" type="button"
-                    role="tab" aria-controls="other" aria-selected="false"><i class="fas fa-address-card"> Other</i></button>
+                <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button"
+                    role="tab" aria-controls="other" aria-selected="false"><i class="fas fa-address-card"> Skills</i></button>
             </li>
         </ul>
         <!-- Tab panes -->
@@ -80,6 +133,19 @@
             <div class="tab-pane active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
                 <!-- Your persoanl info will be inserted here -->
                 Información personal
+                <div class="card card-item" >
+                    <div class="btn-edit">
+                        <a href="#" class="btn-right"> <i class="fa fa-pen"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Leonardo Javier Olmedo</strong></h4>
+                        <p class="card-text"><strong>Address:</strong> Av. Roca 1159 (5613)</p>
+                        <p class="card-text"><strong>City:</strong> Malargüe</p>
+                        <p class="card-text"><strong>Country, State:</strong> Argentina, Mendoza</p>
+                        <p class="card-text"><strong>Telephone: +54 9260 431-2515</strong> </p>
+                        <p class="card-text"><strong>E-mail:</strong>leoolmedo@hotmail.com</p>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane" id="education" role="tabpanel" aria-labelledby="education-tab">
                 <!-- Your education and skills will be inserted here below-->
@@ -93,7 +159,7 @@
                         <p class="card-text"><strong>Carrera:</strong> Ingeniería electrónica</p>
                         <p class="card-text"><strong>Período:</strong> 2003 - 2004</p>
                         <p class="card-text"><strong>Lugar:</strong> Facultad Regional Haedo.</p>
-                        <a href="http://fra.utn.edu.ar" class="btn btn-primary">Visitar web Institucional</a>
+                        <a target="_blank" href="http://fra.utn.edu.ar" class="btn btn-primary">Visitar web Institucional</a>
                     </div>
                 </div>
                 <div class="card card-item" >
@@ -106,7 +172,7 @@
                         <p class="card-text"><strong>Carrera:</strong> Ingeniería electrónica</p>
                         <p class="card-text"><strong>Período:</strong> 1996 - 2002</p>
                         <p class="card-text"><strong>Lugar:</strong> Facultad Regional Avellaneda.</p>
-                        <a href="http://frh.utn.edu.ar" class="btn btn-primary">Visitar web Institucional</a>
+                        <a target="_blank" href="http://frh.utn.edu.ar" class="btn btn-primary">Visitar web Institucional</a>
                     </div>
                 </div>
                 
@@ -123,7 +189,7 @@
                         <p class="card-text"><strong>Puesto:</strong> M&O Technician (Satcom)</p>
                         <p class="card-text"><strong>Período:</strong> 01/04/2012 - Actualidad</p>
                         <p class="card-text"><strong>Lugar de trabajo:</strong> Malargüe, Mendoza.</p>
-                        <a href="http://www.telespazio.com/ar" class="btn btn-primary">Visitar web Institucional</a>
+                        <a target="_blank" href="https://www.telespazio.com/es/argentina" class="btn btn-primary">Visitar web Institucional</a>
                     </div>
                     <div>
                         para que será este espacio, ¿no?
@@ -139,16 +205,36 @@
                         <p class="card-text"><strong>Puesto:</strong>Responsable Departamento de informática</p>
                         <p class="card-text"><strong>Período:</strong> 0/1998 - 03/2007</p>
                         <p class="card-text"><strong>Lugar de trabajo:</strong> San Isidro, Buenos Aires.</p>
-                        <a href="http://www.sanjuanelprecursor.edu.ar" class="btn btn-primary">Visitar web Institucional</a>
+                        <a target="_blank" href="http://www.sanjuanelprecursor.edu.ar" class="btn btn-primary">Visitar web Institucional</a>
                     </div>
                     <div>
                         y este otro para que será este espacio, ¿no?
                     </div>
                 </div>
             </div>
-            <div class="tab-pane" id="other" role="tabpanel" aria-labelledby="other-tab">
-                <!-- any other personal info will be inserted here -->
-                Insert other aditional info here...
+            <div class="tab-pane" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <div class="card card-item" >
+                    <div class="btn-edit">
+                        <a href="#" class="btn-right"> <i class="fa fa-pen"></i></a>
+                    </div>
+                    <!-- Este se puede usar para los links de los certificados-->
+                    <h4>
+                        <i class="fas fa-cogs"></i> 
+                        Hard Skills
+                    </h4>
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-test"><strong>Electronic technician</strong>
+                                 Cerficated in secundary school
+                            </li>
+                            <li class="card-text"><strong>HTML:</strong></li>
+                            <li class="card-text"><strong>html:</strong> 0/1998 - 03/2007</li>
+                            <li class="card-text"><strong>Lugar de trabajo:</strong> San Isidro, Buenos Aires.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
             </div>
         </div>
   
@@ -163,5 +249,6 @@
     </footer>
      <!-- JavaScript Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.com/libraries/Chart.js"></script>
 </body>
 </html>
